@@ -33,8 +33,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Header />
-      <MenuDrawer />
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      <MenuDrawer darkMode={darkMode} setDarkMode={setDarkMode} />
       <Home darkMode={darkMode} setDarkMode={setDarkMode} />
     </ThemeProvider>
   )
