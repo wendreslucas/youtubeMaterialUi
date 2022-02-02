@@ -44,6 +44,7 @@ const useStyles = makeStyles(theme => ({
     textTransform: 'uppercase'
   },
   gridVideos: {
+    marginTop: 30,
     marginLeft: 240
   }
 }))
@@ -136,8 +137,7 @@ function Home() {
   return (
     <div className={classes.root}>
       <Box display="flex">
-        <Box p={8}>
-          className={classes.gridVideos}
+        <Box p={8} className={classes.gridVideos}>
           <Typography
             variant="h6"
             color="textPrimary"
