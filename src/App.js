@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { ThemeProvider, createMuiTheme, makeStyles } from '@material-ui/core'
-
 import Home from './Home'
 import Header from './Header'
+import MenuDrawer from './MenuDrawer'
 
 const useStyles = makeStyles({
   root: {}
@@ -29,12 +29,13 @@ function App() {
     }
   })
 
-  const classes = useStyles()
+  // const classes = useStyles()
 
   return (
     <ThemeProvider theme={theme}>
-      <Home darkMode={darkMode} setDarkMode={setDarkMode} />
       <Header />
+      <MenuDrawer />
+      <Home darkMode={darkMode} setDarkMode={setDarkMode} />
     </ThemeProvider>
   )
 }

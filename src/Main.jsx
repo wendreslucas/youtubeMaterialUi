@@ -42,9 +42,6 @@ const useStyles = makeStyles(theme => ({
   },
   subheader: {
     textTransform: 'uppercase'
-  },
-  gridVideos: {
-    marginLeft: 240
   }
 }))
 
@@ -130,14 +127,13 @@ const videos = [
   }
 ]
 
-function Home() {
+function Main() {
   const classes = useStyles()
 
   return (
     <div className={classes.root}>
       <Box display="flex">
         <Box p={8}>
-          className={classes.gridVideos}
           <Typography
             variant="h6"
             color="textPrimary"
@@ -145,6 +141,7 @@ function Home() {
           >
             Recomendados
           </Typography>
+
           <Grid container spacing={4}>
             {videos.map((item, index) => (
               <Grid item lg={3} md={4} sm={6} xs={12}>
@@ -183,5 +180,4 @@ function Home() {
     </div>
   )
 }
-
-export default Home
+export default Main
