@@ -25,6 +25,11 @@ function App() {
         default: darkMode ? '#232323' : '#FFF',
         dark: darkMode ? '#181818' : '#f4f6f8',
         paper: darkMode ? '#232323' : '#FFF'
+      },
+      color: {
+        default: darkMode ? '#232323' : '#FFF',
+        dark: darkMode ? '#181818' : '#f4f6f8',
+        paper: darkMode ? '#232323' : '#FFF'
       }
     }
   })

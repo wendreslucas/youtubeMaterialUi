@@ -26,7 +26,8 @@ const useStyles = makeStyles(theme => ({
     zIndex: theme.zIndex.drawer + 1
   },
   logo: {
-    height: 25
+    height: 25,
+    cursor: 'pointer'
   },
   drawer: {
     width: 240,
@@ -67,7 +68,6 @@ function Header({ darkMode, setDarkMode }) {
         <IconButton
           className={classes.menuIcon}
           size="large"
-          edge="start"
           aria-label="menu"
           sx={{ mr: 2 }}
         >

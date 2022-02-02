@@ -128,7 +128,7 @@ function MenuDrawer() {
             />
           </ListItem>
           <Divider />
-          <Box p={4}>
+          <Box p={6}>
             <Typography variant="body2">
               Faça login para curtir vídeos, comentar e se inscrever.
             </Typography>

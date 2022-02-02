@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, makeStyles } from '@material-ui/core'
+import { Box, Divider, makeStyles } from '@material-ui/core'
 import { Typography } from '@mui/material'
 import Grid from '@mui/material/Grid'
 
@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
     textTransform: 'uppercase'
   },
   gridVideos: {
-    marginTop: 30,
+    marginTop: 40,
     marginLeft: 240
   }
 }))
@@ -136,15 +136,16 @@ function Home() {
 
   return (
     <div className={classes.root}>
+      <Divider />
       <Box display="flex">
         <Box p={8} className={classes.gridVideos}>
-          <Typography
+          {/* <Typography
             variant="h6"
             color="textPrimary"
             style={{ fontWeight: '600' }}
           >
             Recomendados
-          </Typography>
+          </Typography> */}
           <Grid container spacing={4}>
             {videos.map((item, index) => (
               <Grid item lg={3} md={4} sm={6} xs={12}>
